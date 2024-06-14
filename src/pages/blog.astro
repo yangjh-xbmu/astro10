@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/globle.css";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,12 +36,11 @@ import Card from "../components/Card.astro";
         </linearGradient>
       </defs>
     </svg>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <NavigationBar />
     <h1>网络日志</h1>
     <p>在这个页面，将展示有关我的博客内容。</p>
   </main>
+  <Footer />
 </Layout>
 
 <style>
