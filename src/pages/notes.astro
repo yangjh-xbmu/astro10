@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/globle.css";
+import { imageConfig } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,17 +37,15 @@ import Card from "../components/Card.astro";
         </linearGradient>
       </defs>
     </svg>
-    <a href="/">首页</a>
-    <a href="/books/">电子书</a>
-    <a href="/notes/">笔记</a>
-    <h1>
-      <span class="text-gradient">学习笔记</span>
-    </h1>
-    <p class="instructions">这里是我学习各种技能时的笔记。</p>
+    <NavigationBar />
+    <h1>课程笔记</h1>
+    <p>在这个页面，将展示有关我的课程笔记。</p>
     <ul>
-      <li><a href="/md/astro安装">Astro安装</a></li>
+      <li><a href="/md/1/">Astro 的安装及部署</a></li>
+      <li><a href="/md/2/">在Astro中创建页面及导航链接</a></li>
     </ul>
   </main>
+  <Footer />
 </Layout>
 
 <style>
@@ -71,6 +73,9 @@ import Card from "../components/Card.astro";
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
+  }
+  h3 {
+    text-align: center;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
