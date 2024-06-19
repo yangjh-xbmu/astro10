@@ -1,5 +1,5 @@
 {
-  "name": "absolute-apogee",
+  "name": "astro10",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.10.1"
+    "astro": "^4.10.2",
+    "csv-parse": "^5.5.6"
   }
 }
